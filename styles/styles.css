@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  font-size: 10px;
+  --accent: hsl(71, 73%, 54%);
+  --text: hsl(204, 43%, 80%);
+  --primary: hsl(179, 62%, 43%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  background: hsl(218, 22%, 85%);
+}
+
+#container {
+  margin: 5rem 3rem;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4), 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.head,
+#intro-head {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.head {
+  font-size: 2rem;
+}
+#intro-head {
+  font-size: 5rem;
+}
+#tagline {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+#intro-text {
+  color: var(--text);
+  line-height: 3rem;
+}
+#btn {
+  text-align: center;
+  background-color: var(--accent);
+  padding: 1.5rem 0 1.5rem 0;
+  border-radius: 5px;
+  margin-top: 3rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+#price-tag {
+  font-size: 4rem;
+  margin: 3rem 0 1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#price-due {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  margin-top: 2rem;
+}
+.list-item {
+  color: var(--text);
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+}
+
+/* box styles */
+.box {
+  padding: 4rem 2.5rem;
+
+  color: white;
+}
+
+#box1 {
+  background-color: white;
+  color: var(--primary);
+}
+#box2 {
+  background-color: hsl(179, 62%, 40%);
+}
+#box3 {
+  background-color: hsl(179, 62%, 45%);
+}
+
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 700px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box {
+    padding: 4rem 4rem;
+  }
+  #box1 {
+    grid-column: 1/3;
+  }
+}
